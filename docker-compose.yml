@@ -3,7 +3,7 @@ services:
   web:
     build: ./app
     command: gunicorn hello_django.wsgi:application --bind 0.0.0.0:8000
-    image: 195151827704.dkr.ecr.us-east-1.amazonaws.com/django_docker_aws:django_socker_aws_web
+    image: 195151827704.dkr.ecr.us-east-1.amazonaws.com/django_docker_aws:django_docker_aws_web
     volumes:
       - ./app/:/usr/src/app/
       - static_volume:/usr/src/app/static
